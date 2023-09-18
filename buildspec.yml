@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+  pre_build:
+    commands:
+      - echo "Installing dependencies..."
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - echo "Running migrations..."
+      - pip install --upgrade pip
+      - python manage.py migrate
+  post_build:
+    commands:
+      - echo "Run Test"
+      - python manage.py test
+artifacts:
+  files:
+    - '**/*'

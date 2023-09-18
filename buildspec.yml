@@ -9,8 +9,6 @@ phases:
       - echo "Installing dependencies..."
       - pip3 install --upgrade pip
       - pip3 install -r requirements.txt
-      - pip3 install pysqlite3
-      - pip3 install pysqlite3-binary
       - echo "Run Test"
       - python manage.py test
 artifacts:

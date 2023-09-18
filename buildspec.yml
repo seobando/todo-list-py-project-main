@@ -4,17 +4,11 @@ phases:
   install:
     runtime-versions:
       python: 3.9
-  pre_build:
-    commands:
-      - echo "Installing dependencies..."
-      - pip install -r requirements.txt
   build:
     commands:
-      - echo "Running migrations..."
+      - echo "Installing dependencies..."
       - pip install --upgrade pip
-      - python manage.py migrate
-  post_build:
-    commands:
+      - pip install -r requirements.txt
       - echo "Run Test"
       - python manage.py test
 artifacts:

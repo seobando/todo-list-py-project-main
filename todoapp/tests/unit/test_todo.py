@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.urls import reverse
-from .models import Todo
+from todoapp.models import Todo
 
 class TodoTests(TestCase):
     def setUp(self):

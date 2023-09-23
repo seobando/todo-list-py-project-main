@@ -4,4 +4,3 @@ psycopg2-binary
 sqlparse
 tzdata
 whitenoise
-db-sqlite3

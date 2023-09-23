@@ -4,3 +4,5 @@ psycopg2-binary
 sqlparse
 tzdata
 whitenoise
+pysqlite3
+pysqlite3-binary2
